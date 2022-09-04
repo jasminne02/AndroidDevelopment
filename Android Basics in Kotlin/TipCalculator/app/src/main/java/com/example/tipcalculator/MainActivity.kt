@@ -13,13 +13,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        displayTip(0.00)
 
         binding.calculateButton.setOnClickListener{ calculateTip() }
     }
 
     private fun calculateTip() {
-        // Get the cost of service(Editable) -> cast to String -> cast to Int
-        val cost = binding.costOfService.text.toString().toDoubleOrNull()
+        // Get the decimal value from the cost of service text field
+        val cost = binding.costOfServiceEditText.text.toString().toDoubleOrNull()
 
         // If the cost is null or 0, then display 0 tip and exit the function early
         if (cost == null || cost == 0.0) {
