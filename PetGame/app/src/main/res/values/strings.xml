@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PetGame</string>
+    <string name="start">Start</string>
+    <string name="pet_game">Pet Game</string>
+    <string name="dog">dog</string>
+    <string name="game_over">Game Over</string>
+    <string name="start_again">Start again</string>
+</resources>
